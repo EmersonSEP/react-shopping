@@ -3,7 +3,7 @@ export function About() {
   return (
     <>
       <h1>About</h1>
-      <p>The best disco store in the world!</p>
+      <p>The best record store in the world!</p>
       <img src={imgCapa2}  className="img-fluid" alt="foto loja"></img>
     </>
   );
