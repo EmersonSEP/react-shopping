@@ -31,29 +31,29 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
           <span className="fs-2">{name}</span>
           <span className="ms-2 text-muted">${price}</span>
         </Card.Title>
-        <div className="mt-auto">
+        <div className="mt-auto ">
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
+            <Button className="w-100 btn-success" onClick={() => increaseCartQuantity(id)}>
               + Add To Cart
             </Button>
           ) : (
             <div
               className="d-flex align-items-center flex-column"
-              style={{ gap: ".5rem" }}
+              style={{ gap: "0.5rem" }}
             >
               <div
-                className="d-flex align-items-center justify-content-center"
-                style={{ gap: ".5rem" }}
+                className="d-flex align-items-center justify-content-center w-75"
+                style={{ gap: "1rem" }}
               >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button className="btn-danger w-50"onClick={() => decreaseCartQuantity(id)}>-</Button>
                 <div>
-                  <span className="fs-3">{quantity}</span> in cart
+                  <span className="fs-2">{quantity}</span> in cart
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button className="btn-success w-50"onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
-              <Button
+              <Button className="w-75"
                 onClick={() => removeFromCart(id)}
-                variant="danger"
+                variant="dark"
                 size="sm"
               >
                 Remove

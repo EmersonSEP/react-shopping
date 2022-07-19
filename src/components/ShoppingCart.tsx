@@ -1,4 +1,4 @@
-import { Offcanvas, Stack } from "react-bootstrap"
+import { Nav, Offcanvas, Stack } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
 import { CartItem } from "./CartItem"
@@ -13,14 +13,14 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Cart</Offcanvas.Title>
+        <Offcanvas.Title><Nav className="nav-link disabled">Cart</Nav></Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>
           {cartItems.map(item => (
             <CartItem key={item.id} {...item} />
           ))}
-          <div className="ms-auto fw-bold fs-5">
+          <div className="ms-auto fw-bold fs-5"         >
             Total ${""}
             {(
               cartItems.reduce((total, cartItem) => {
