@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import { Navbar } from '../components/Navbar';
+import imgCapa2 from "../assets/capa2.jpg"
 export function About() {
   return (
     <>
-    <Navbar />
       <h1>About</h1>
-
+      <p>The best disco store in the world!</p>
+      <img src={imgCapa2}  className="img-fluid" alt="foto loja"></img>
     </>
   );
 }

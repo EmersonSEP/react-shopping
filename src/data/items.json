@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 3.99,
-    "imgUrl": "/imgs/book.jpg"
+    "name": "Pearl Jam",
+    "price": 10.99,
+    "imgUrl": "/imgs/pearljam.jpg"
   },
   {
     "id": 2,
-    "name": "Ball",
-    "price": 15.99,
-    "imgUrl": "/imgs/ball.jpg"
+    "name": "Sepultura",
+    "price": 9.99,
+    "imgUrl": "/imgs/sepultura.jpg"
   },
   {
     "id": 3,
-    "name": "Abacate",
-    "price": 1.05,
-    "imgUrl": "/imgs/abacate.jpg"
+    "name": "Legião Urbana",
+    "price": 7.05,
+    "imgUrl": "/imgs/legiao.jpg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14099.00,
-    "imgUrl": "/imgs/car.jpg"
+    "name": "System of a Down",
+    "price": 6.10,
+    "imgUrl": "/imgs/systemofadown.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nirvana",
+    "price": 6.05,
+    "imgUrl": "/imgs/nirvana.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Beatles",
+    "price": 6.01,
+    "imgUrl": "/imgs/beatles.jpg"
   }
 ]

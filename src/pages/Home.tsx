@@ -1,13 +1,13 @@
-import { Link, NavLink  } from 'react-router-dom';
-import { Navbar } from '../components/Navbar';
-
-export function Home () {
+import imgCapa from "../assets/capa.jpg"
+import imgCapa3 from "../assets/capa3.png"
+export function Home() {
   return (
-<>
-<Navbar />
-<h1>Home</h1>
+    <>
+      <h1>Rock Music</h1>
+      <img src={imgCapa}  className="img-fluid mb-4" alt="foto loja"></img>
+      <img src={imgCapa3}  className="img-fluid mb-4" alt="foto loja"></img>
 
+    </>
 
-</>
   )
 }
